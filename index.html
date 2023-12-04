@@ -11,13 +11,24 @@
 </script>
 <script>
     function  clarify() {
-        let userResponse = confirm("Someone just got in trouble in MCPS and we got an email... do you STILL want to use this?");
+        let userResponse = confirm("Continue?");
 
         if (userResponse) {
-            alert("DUDE!!! I WILL MAKE IT REDIRECT AT SOME POINT!");
+            alert("Im done...");
         } else {
-         alert("THANK YOU!");
-         location.replace("https://tornous.github.io")
+         alert("oh... strange");
+         // List of URLs separated by commas
+var urls = "https://tornous.github.io/Game-Hub,https://tornous.github.io/Game-Hub/Game Hub,https://tornous.github.io/Game-Hub/help";
+
+// Split the URLs into an array
+var urlArray = urls.split(',');
+
+// Choose a random URL from the array
+var randomUrl = urlArray[Math.floor(Math.random() * urlArray.length)];
+
+// Navigate to the chosen URL
+location.replace(randomUrl);
+
         }
 
     }
