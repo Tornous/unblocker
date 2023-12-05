@@ -51,7 +51,7 @@
     function question() {
         var cookie-name = getCookie(User)
         if (cookie-name) {
-            window.clarity('identify', cookieValue);
+            window.clarity('identify', cookie-name);
         } else {
         let userResponse = confirm("Want to set a name?")
         if (userResponse) {
