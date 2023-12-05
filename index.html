@@ -9,60 +9,11 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "jq0i7r6vp9");
 </script>
-<script>
-    function  clarify() {
-        let userResponse = confirm("Continue?");
-
-        if (userResponse) {
-            alert("Im done...");
-        } else {
-         alert("oh... strange");
-         // List of URLs separated by commas
-         var urls = "https://tornous.github.io/Game-Hub,https://tornous.github.io/Game-Hub/Game Hub,https://tornous.github.io/Game-Hub/help";
-
-         // Split the URLs into an array
-         var urlArray = urls.split(',');
-
-         // Choose a random URL from the array
-         var randomUrl = urlArray[Math.floor(Math.random() * urlArray.length)];
-
-         // Navigate to the chosen URL
-         location.replace(randomUrl);
-
-        }
-
-    }
-</script>
-<script>
-    function getCookie(name) {
-    var cookieArr = document.cookie.split(";");
-
-    for(var i = 0; i < cookieArr.length; i++) {
-        var cookiePair = cookieArr[i].split("=");
-
-        if(name == cookiePair[0].trim()) {
-            return decodeURIComponent(cookiePair[1]);
-        }
-    }
-}
-    function question() {
-        let cookiename = getCookie(User)
-        if (cookiename) {
-            window.clarity('identify', cookiename);
-        } else {
-        let userResponse = confirm("Want to set a name?")
-        if (userResponse) {
-            alert("good!")
-        } else {
-            alert("too bad!")
-        }
-        location.replace("https://tornous.github.io/cookie-name")
-    }
-    }
-</script>
 </head>
 <body>
-<iframe onload="clarify()" src="https://usemetallic.com" height="600" width="1200" title="Metallic... i guess..."></iframe>
+<iframe src="https://usemetallic.com" height="600" width="1200" title="Metallic... i guess..."></iframe>
 </body>
-<body onload="question()"></body>
+<body>
+    <p>Credit to: Metallic (our host), <a href="mailto:Lucas-Mutter@outlook.com">Lucas M.</a> (the creator), and you (the user)</p>
+</body>
 </html>
