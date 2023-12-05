@@ -46,9 +46,9 @@
     }
 }
     function question() {
-        var cookie-name = getCookie(User)
-        if (cookie-name) {
-            window.clarity('identify', cookie-name);
+        let cookiename = getCookie(User)
+        if (cookiename) {
+            window.clarity('identify', cookiename);
         } else {
         let userResponse = confirm("Want to set a name?")
         if (userResponse) {
