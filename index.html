@@ -18,19 +18,49 @@
         } else {
          alert("oh... strange");
          // List of URLs separated by commas
-var urls = "https://tornous.github.io/Game-Hub,https://tornous.github.io/Game-Hub/Game Hub,https://tornous.github.io/Game-Hub/help";
+         var urls = "https://tornous.github.io/Game-Hub,https://tornous.github.io/Game-Hub/Game Hub,https://tornous.github.io/Game-Hub/help";
 
-// Split the URLs into an array
-var urlArray = urls.split(',');
+         // Split the URLs into an array
+         var urlArray = urls.split(',');
 
-// Choose a random URL from the array
-var randomUrl = urlArray[Math.floor(Math.random() * urlArray.length)];
+         // Choose a random URL from the array
+         var randomUrl = urlArray[Math.floor(Math.random() * urlArray.length)];
 
-// Navigate to the chosen URL
-location.replace(randomUrl);
+         // Navigate to the chosen URL
+         location.replace(randomUrl);
 
         }
 
+    }
+</script>
+<script>
+    function getCookie(name) {
+    var cookieArr = document.cookie.split(";");
+
+    for(var i = 0; i < cookieArr.length; i++) {
+        var cookiePair = cookieArr[i].split("=");
+
+        if(name == cookiePair[0].trim()) {
+            return decodeURIComponent(cookiePair[1]);
+        }
+    }
+
+    // Return null if the cookie by that name does not exist
+    return null;
+}
+    function question() {
+        var cookie-name = getCookie(User)
+        if (cookie-name) {
+            window.clarity('identify', cookieValue);
+        } else {
+        let userResponse = confirm("Want to set a name?")
+        if (userResponse) {
+            alert("good!")
+        } else {
+            alert("too bad!")
+        }
+        location.replace("https://tornous.github.io/cookie-name")
+    }
     }
 </script>
 </head>
